@@ -51,7 +51,7 @@ body {
 }
 
 .feature-image {
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
     margin: 0 auto 20px;
     border-radius: 10px;
