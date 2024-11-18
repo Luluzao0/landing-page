@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Baixe agora o eBook '30 Receitas Fit para Pet'! Ofereça saúde e sabor para seu pet com receitas naturais e fáceis de preparar.">
-    <meta name="description" content="receitaspet">
-    <meta name="description" content="receitas pet">
-    <meta name="description" content="receitas fit para pet">
-    <meta name="description" content="fit para pet">
-    <meta name="description" content="pet">
-
     <meta name="keywords" content="receitas fit para pets, comida saudável para pets, receitas naturais para cães, receitas naturais para gatos, eBook grátis para pets">
     <meta name="author" content="Receitas Fit para Pets">
     <meta name="robots" content="index, follow">
+    <meta property="og:title" content="30 Receitas Fit para Pets - Saúde e Sabor para o Seu Amigo">
+    <meta property="og:description" content="Baixe gratuitamente nosso eBook com 30 receitas naturais e cuide da saúde do seu pet.">
+    <meta property="og:image" content="img/pet-receitas.webp">
+    <meta property="og:url" content="https://luisaodev.tech/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="30 Receitas Fit para Pets">
+    <meta name="twitter:description" content="Ofereça saúde e sabor ao seu pet com nosso eBook gratuito.">
+    <meta name="twitter:image" content="img/pet-receitas.webp">
     <title>30 Receitas Fit para Pet - Saúde e Sabor para o Seu Amigo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Fonte do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="img/pet.ico" type="image/x-icon">
+    <!-- Dados Estruturados -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -29,85 +41,117 @@
     </script>
 </head>
 <body>
-    <header class="header">
+    <!-- Cabeçalho -->
+    <header class="header text-center text-white py-5">
         <div class="container">
-            <h1>30 Receitas Fit para Pet</h1>
-            <p>Cuidando da saúde do seu amigo de quatro patas com receitas deliciosas e saudáveis.</p>
-            <a href="#receitas" class="btn">Baixar eBook Grátis</a>
+            <h1 class="display-4 animate__animated animate__fadeInDown">30 Receitas Fit para Pet</h1>
+            <p class="lead animate__animated animate__fadeInUp">Cuidando da saúde do seu amigo de quatro patas com receitas deliciosas e saudáveis.</p>
+            <a href="#receitas" class="btn btn-primary btn-lg animate__animated animate__pulse">Baixar eBook Grátis</a>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#features">Benefícios</a></li>
-            <li><a href="#products">Produtos</a></li>
-            <li><a href="#receitas">Baixar eBook</a></li>
-        </ul>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Receitas Fit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Benefícios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#receitas">Baixar eBook</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section class="features" id="features">
+    <!-- Seção Benefícios -->
+    <section class="features py-5" id="features">
         <div class="container">
-            <img src="img/pet-receitas.webp" alt="Receitas Fit para Pets - eBook Gratuito" class="feature-image" loading="lazy">
-            <h2>Por que escolher receitas fit?</h2>
-            <p>Descubra <strong>30 receitas fit</strong> para o seu pet. Cuidar da <strong>saúde</strong> do seu cão ou gato nunca foi tão fácil. Baixe nosso <strong>eBook gratuito</strong> e aprenda a preparar <span class="highlight">comidas naturais</span> que seu pet vai amar!</p>
-            <div class="feature-items">
-                <div class="item">
-                    <h3>Ingredientes Naturais</h3>
-                    <p>Receitas feitas com amor e sem conservantes.</p>
+            <h2 class="text-center text-primary mb-4">Por que escolher receitas fit?</h2>
+            <p class="text-center mb-5">Descubra <strong>30 receitas fit</strong> para o seu pet. Cuidar da <strong>saúde</strong> do seu cão ou gato nunca foi tão fácil. Baixe nosso <strong>eBook gratuito</strong> e aprenda a preparar <span class="highlight">comidas naturais</span> que seu pet vai amar!</p>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="card shadow-sm p-4 animate__animated animate__fadeInLeft">
+                        <h3>Ingredientes Naturais</h3>
+                        <p>Receitas feitas com amor e sem conservantes.</p>
+                    </div>
                 </div>
-                <div class="item">
-                    <h3>Fácil de Preparar</h3>
-                    <p>Instruções simples para incluir na rotina.</p>
+                <div class="col-md-4 text-center">
+                    <div class="card shadow-sm p-4 animate__animated animate__fadeInUp">
+                        <h3>Fácil de Preparar</h3>
+                        <p>Instruções simples para incluir na rotina.</p>
+                    </div>
                 </div>
-                <div class="item">
-                    <h3>Seu Pet Vai Amar</h3>
-                    <p>Sabor irresistível com saúde garantida.</p>
+                <div class="col-md-4 text-center">
+                    <div class="card shadow-sm p-4 animate__animated animate__fadeInRight">
+                        <h3>Seu Pet Vai Amar</h3>
+                        <p>Sabor irresistível com saúde garantida.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="products" id="products">
+    <!-- Seção Produtos -->
+    <section class="products py-5 bg-light" id="products">
         <div class="container">
-            <h2>Produtos para complementar as receitas</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="img/product1.webp" alt="Comida Natural para Cães" class="product-image" loading="lazy">
-                    <h3>Comida Natural para Cães</h3>
-                    <p>Um complemento saudável para as refeições do seu pet.</p>
-                    <p class="price">R$ 39,90</p>
-                    <a href="https://abrir.link/NnuNO" class="btn">Comprar</a>
+            <h2 class="text-center text-primary mb-4">Produtos para complementar as receitas</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm text-center animate__animated animate__zoomIn">
+                        <img src="img/product1.webp" class="card-img-top" alt="Comida Natural para Cães">
+                        <div class="card-body">
+                            <h3 class="card-title">Comida Natural para Cães</h3>
+                            <p>Um complemento saudável para as refeições do seu pet.</p>
+                            <p class="text-danger fw-bold">R$ 39,90</p>
+                            <a href="https://abrir.link/NnuNO" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <img src="img/product2.webp" alt="Petiscos Fit para Cães e Gatos" class="product-image" loading="lazy">
-                    <h3>Petiscos Fit para Cães e Gatos</h3>
-                    <p>Snack saudável para recompensar seu pet.</p>
-                    <p class="price">R$ 19,90</p>
-                    <a href="https://abrir.link/NnuNO" class="btn">Comprar</a>
+                <div class="col-md-4">
+                    <div class="card shadow-sm text-center animate__animated animate__zoomIn">
+                        <img src="img/product2.webp" class="card-img-top" alt="Petiscos Fit para Cães e Gatos">
+                        <div class="card-body">
+                            <h3 class="card-title">Petiscos Fit para Cães e Gatos</h3>
+                            <p>Snack saudável para recompensar seu pet.</p>
+                            <p class="text-danger fw-bold">R$ 19,90</p>
+                            <a href="https://abrir.link/NnuNO" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <img src="img/product3.webp" alt="Kit de Receitas Fit para Pets" class="product-image" loading="lazy">
-                    <h3>Kit de Receitas Fit para Pets</h3>
-                    <p>Ingredientes selecionados para uma refeição perfeita.</p>
-                    <p class="price">R$ 59,90</p>
-                    <a href="https://abrir.link/NnuNO" class="btn">Comprar</a>
+                <div class="col-md-4">
+                    <div class="card shadow-sm text-center animate__animated animate__zoomIn">
+                        <img src="img/product3.webp" class="card-img-top" alt="Kit de Receitas Fit para Pets">
+                        <div class="card-body">
+                            <h3 class="card-title">Kit de Receitas Fit para Pets</h3>
+                            <p>Ingredientes selecionados para uma refeição perfeita.</p>
+                            <p class="text-danger fw-bold">R$ 59,90</p>
+                            <a href="https://abrir.link/NnuNO" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta" id="receitas">
+    <!-- Seção Call-to-Action -->
+    <section class="cta text-center text-white py-5" id="receitas">
         <div class="container">
-            <h2>Baixe agora o eBook gratuito!</h2>
-            <p>Descubra <strong>30 receitas fit</strong> para manter seu pet <span class="highlight">saudável e feliz</span>.</p>
-            <a href="#" class="btn btn-large">Quero Receber</a>
+            <h2 class="display-5">Baixe agora o eBook gratuito!</h2>
+            <p class="lead">Descubra <strong>30 receitas fit</strong> para manter seu pet <span class="highlight">saudável e feliz</span>.</p>
+            <a href="#" class="btn btn-lg btn-warning text-white">Quero Receber</a>
         </div>
     </section>
 
-    
-
-    <footer class="footer">
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-white text-center py-3">
         <p>&copy; 2024 Receitas Fit para Pets. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
