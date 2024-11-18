@@ -1,15 +1,15 @@
 /* Reset básico */
-body, h1, h2, h3, p, a {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* Corpo */
 body {
-    background-color: #fefefe;
-    color: #444;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Cabeçalho */
@@ -18,11 +18,12 @@ body {
     color: #fff;
     text-align: center;
     padding: 50px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .header h1 {
     font-size: 2.8em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .header p {
@@ -35,16 +36,46 @@ body {
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
+    font-size: 1.2em;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .header .btn:hover {
     background-color: #0097a7;
+    transform: scale(1.05);
 }
 
-/* Seção de Recursos */
+/* Navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+/* Seção Features */
 .features {
     padding: 40px 20px;
     text-align: center;
@@ -61,23 +92,44 @@ body {
 .features h2 {
     font-size: 2em;
     color: #ff5722;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.features p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
 }
 
 .features .feature-items {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .item {
-    background: #ffcc80;
-    padding: 20px;
+    background-color: #ffe0b2;
     border-radius: 10px;
-    text-align: left;
-    width: 300px;
+    padding: 20px;
+    width: 280px;
     margin: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.item p {
+    color: #555;
 }
 
 /* Seção de Produtos */
@@ -86,45 +138,58 @@ body {
     text-align: center;
 }
 
+.products h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff5722;
+}
+
 .product-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .product-item {
-    background: #f5f5f5;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: 280px;
     margin: 15px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .product-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .product-image {
     max-width: 100%;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
 .product-item h3 {
     font-size: 1.5em;
-    color: #444;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-item p {
+    color: #555;
+    font-size: 1em;
 }
 
 .product-item .price {
     font-size: 1.2em;
     color: #ff5722;
-    margin: 10px 0;
     font-weight: bold;
+    margin: 15px 0;
 }
 
 .product-item .btn {
@@ -132,37 +197,37 @@ body {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    font-size: 1em;
     font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Rodapé */
-.footer {
-    background: #444;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
+.product-item .btn:hover {
+    background-color: #0097a7;
+    transform: scale(1.1);
 }
 
-/* Seção Call-to-Action */
+/* Call-to-Action */
 .cta {
     background-color: #ff5722;
     color: #fff;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px 20px;
 }
 
 .cta h2 {
-    font-size: 2em;
+    font-size: 2.4em;
     margin-bottom: 15px;
 }
 
 .cta p {
     font-size: 1.2em;
     margin-bottom: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .cta .highlight {
@@ -180,11 +245,21 @@ body {
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cta .btn-large:hover {
     background-color: #0097a7;
-    transform: scale(1.05);
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+.footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    margin-top: 20px;
 }
